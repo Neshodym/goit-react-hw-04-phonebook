@@ -1,0 +1,23 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 10px 0 20px;
+}
+.label {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  color: rgb(55, 137, 204);
+}
+.btnForm {
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+
+  color: rgb(55, 137, 204);
+  padding: 5px 5px 5px 5px;
+  border: 1px solid rgb(110, 106, 106);
+  border-radius: 5px;
+  background-color: #fff;
+}
