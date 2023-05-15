@@ -1,9 +1,8 @@
+import React from 'react';
+import PropTypes from 'prop-types';
 import css from './Contacts.module.css';
-import PropTypes from "prop-types";
 
 export const Contacts = ({ title, contacts, onDeleteContact }) => {
-
-
   return (
     <>
       <h3 className={css.title}>{title}</h3>
@@ -24,14 +23,15 @@ export const Contacts = ({ title, contacts, onDeleteContact }) => {
     </>
   );
 };
+
 Contacts.propTypes = {
-  title:PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
   contacts: PropTypes.arrayOf(
-      PropTypes.shape({
-        id: PropTypes.string.isRequired,
-        name: PropTypes.string.isRequired,
-        phone: PropTypes.string.isRequired,
-      }),
-    ).isRequired,
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+      phone: PropTypes.string.isRequired,
+    })
+  ).isRequired,
   onDeleteContact: PropTypes.func.isRequired,
 };
